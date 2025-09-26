@@ -1,23 +1,25 @@
 {
   "name": "registro-pacientes",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sistema de Registro de Pacientes - Blockchain DApp",
   "main": "index.js",
   "scripts": {
     "test": "hardhat test",
-    "node": "hardhat node",
-    "deploy": "hardhat run scripts/deploy-and-update.js --network localhost",
-    "start": "live-server frontend",
-    "compile": "hardhat compile",
-    "clean": "hardhat clean"
+    "node": "npx hardhat node",
+    "deploy": "npx hardhat run scripts/deploy-and-update.js --network localhost",
+    "start": "npx live-server frontend",
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "setup": "npm install"
   },
-  "keywords": [],
+  "keywords": ["blockchain", "ethereum", "hardhat", "solidity", "dapp"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "dotenv": "^17.2.2",
-    "hardhat": "^2.26.3"
+    "hardhat": "^2.26.3",
+    "live-server": "^1.2.2"
   },
   "dependencies": {
     "web3": "^4.16.0"
